@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Money - Daftar</title>
+    <link rel="stylesheet" href="daftar.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h2>Daftar Sekarang</h2>
+            <p>Halo! Selamat datang di website control money 👋</p>
+            <form>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Nama Lengkap</label>
+                        <input type="text" placeholder="Masukkan Nama Lengkap">
+                    </div>
+                    <div class="input-group">
+                        <label>Nama Pengguna</label>
+                        <input type="text" placeholder="Buat Nama Pengguna">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Masukkan Email">
+                    </div>
+                    <div class="input-group">
+                        <label>Kata Sandi</label>
+                        <input type="password" id="password" placeholder="Buat Kata Sandi">
+                        <i class="fa-solid fa-eye-slash toggle-password" onclick="togglePassword()"></i>
+
+                        <p class="password-hint">kata sandi minimal terdiri dari 6 digit angka atau huruf</p>
+                    </div>
+                </div>
+                <button type="submit" class="btn-daftar">Daftar</button>
+                <p class="login-link">Sudah memiliki akun? <a href="#">Masuk</a></p>
+            </form>
+        </div>
+        <div class="image-section">
+            <img src="asset/Logo fix.png" alt="Logo fix" class="logo">
+            <img src="asset/computer.png" alt="Computer" class="computer">
+        </div>
+    </div>
+    <script src="daftar.js"></script>
+</body>
+</html>
