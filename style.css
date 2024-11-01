@@ -14,44 +14,7 @@ body {
     margin: 0 auto; /* Membuat website selalu di tengah layar */
     overflow-x: hidden; /* Mencegah scroll horizontal */
 }
-.background-shape1 {
-    width: 902px;
-    height: 800px;
-    background: #BA24D5; 
-    border-radius: 50%; /* Membuat elemen menjadi lingkaran */
-    filter: blur(231px); /* Efek blur  */
-    position: absolute; 
-    top: -200px; /* Posisi di atas halaman (sesuaikan dengan kebutuhan) */
-    left: 50%; /* Posisi di tengah secara horizontal */
-    transform: translateX(-50%); /* Agar elemen benar-benar di tengah layar secara horizontal */
-    z-index: -1; /*  elemen berada di belakang konten utama */
-}
-  .background-shape2 {
-    width: 458px;
-    height: 458px;
-    background: #6938EF; 
-    box-shadow: 0px 0px 50px rgba(105, 56, 239, 0.5); /* Sesuaikan bayangan */
-    border-radius: 458px;
-    filter: blur(231px); /* Mengurangi efek blur untuk tampilan lebih jelas */
-    position: absolute; /* Agar tidak mengganggu elemen lain */
-    top: 50%; /* Posisikan secara vertikal di tengah */
-    left: -200px; /* Atur sedikit di luar layar untuk efek lebih baik di sisi kiri */
-    transform: translateY(-50%); /* n elemen berada di tengah secara vertikal */
-    z-index: -1; 
-}
-.background-shape3 {
-    width: 458px;
-    height: 458px;
-    background: #6938EF; 
-    box-shadow: 0px 0px 50px rgba(105, 56, 239, 0.5); /* Sesuaikan bayangan */
-    border-radius: 1000px; 
-    filter: blur(200px); /*  efek blur */
-    position: absolute; 
-    top: 80%; /* Posisi vertikal di tengah */
-    right: -200px; /* Atur sedikit di luar layar untuk efek lebih baik di sisi kanan */
-    transform: translateY(-50%); 
-    z-index: -1;
-}
+
 /* Navbar Background Transparan dengan Border Putih */
 header nav {
     display: flex; /* Menggunakan flexbox untuk layout */
