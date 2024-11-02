@@ -1,0 +1,189 @@
+/* Gaya umum tetap sama */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Mengatur box-sizing untuk semua elemen */
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Mengatur jenis font */
+    background-color: #E3D9FB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Mengatur tinggi minimal layar penuh */
+    margin: 0; /* Menghapus margin pada body */
+}
+
+.container {
+    display: flex;
+    width: 100%; /* Mengatur lebar 100% agar memenuhi layar penuh */
+    max-width: none; /* Menghapus batas maksimal lebar */
+    background-color: #F3E8FF;
+    border-radius: 0; /* Menghapus border radius agar elemen memenuhi layar */
+    box-shadow: none; /* Menghapus bayangan pada kontainer untuk desain yang lebih bersih */
+}
+
+.left, .right {
+    flex: 1; /* Membagi ruang sama besar untuk bagian kiri dan kanan */
+    padding: 40px;
+    height: 100vh; /* Menambahkan tinggi agar memenuhi layar penuh secara vertikal */
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px; /* Menggeser konten ke tengah */
+}
+
+.right {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding-right: 40px; /* Atur padding kanan jika diperlukan */
+}
+
+.right img {
+    max-width: 70%; /* Mengatur ukuran gambar lebih kecil */
+    height: auto; /* Memastikan gambar tidak terdistorsi */
+    margin-top: 20px; /* Jarak antara tombol dan gambar */
+    margin-left: 80px; /* Menggeser gambar sedikit ke kanan */
+}
+
+.header {
+    display: flex; /* Menggunakan flexbox untuk header */
+    justify-content: flex-start; /* Menempatkan konten di ujung kiri */
+    margin-bottom: 20px; /* Menambahkan margin bawah untuk memberikan ruang antara tombol dan gambar */
+}
+
+h1 {
+    color: #2D0F85;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #4A4A4A;
+    margin-bottom: 20px;
+}
+
+.divider {
+    text-align: center;
+    color: #A0A0A0;
+    margin: 20px 0;
+}
+
+.divider-container {
+    display: flex; /* Menggunakan flexbox untuk menyusun garis dan teks secara horizontal */
+    align-items: center; /* Memastikan garis dan teks berada di tengah vertikal */
+    margin: 20px 0; /* Jarak antara elemen ini dengan elemen lain */
+}
+
+.divider-line {
+    flex: 1; /* Membuat garis mengisi ruang yang tersisa */
+    border: none; /* Menghapus border default */
+    border-top: 1px solid #E0E0E0; /* Menambahkan garis atas */
+    margin: 0 10px; /* Jarak antara garis dan teks */
+}
+
+.divider-container span {
+    color: #2D0F85; /* Warna teks */
+    font-size: 16px; /* Ukuran font untuk teks */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    background-color: #D1B3FF;
+    color: #4A4A4A;
+}
+
+.form-group input::placeholder {
+    color: #ffffff;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    background-color: #D1B3FF;
+    color: #7A5AF8;
+}
+
+.toggle-visibility {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between; /* Menyusun label dan tautan dalam satu baris */
+    align-items: center;
+    margin-top: 10px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.options label input {
+    margin-right: 5px;
+}
+
+.options a {
+    font-size: 14px;
+    color: black; /* Warna teks */
+    text-decoration: underline; /* Menambahkan garis bawah */
+    cursor: pointer; /* Mengubah kursor saat hover */
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #2D0F85;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register {
+    text-align: center;
+    margin-top: 20px;
+    display: flex; /* Menggunakan flexbox untuk menyusun elemen dalam baris */
+    justify-content: center; /* Mengatur posisi ke tengah */
+}
+
+.register a {
+    color: #2D0F85;
+    text-decoration: underline; /* Menambahkan garis bawah */
+    margin-left: 5px;
+}
+
+.register a:hover {
+    text-decoration: underline; /* Mengatur agar garis bawah tetap muncul saat hover */
+}
