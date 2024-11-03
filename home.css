@@ -1,44 +1,44 @@
-/* Gaya umum tetap sama */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Mengatur box-sizing untuk semua elemen */
+    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif; /* Mengatur jenis font */
-    background: linear-gradient(135deg, #3B008A, #7F31D4); /* Warna latar belakang gradien */
-    color: white; /* Warna teks */
-    min-height: 100vh; /* Minimum tinggi body 100% viewport */
-    width: 100%; /* Lebar 100% */
-    max-width: 1440px; /* Membatasi lebar maksimum website */
-    margin: 0 auto; /* Membuat website selalu di tengah layar */
-    overflow-x: hidden; /* Mencegah scroll horizontal */
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #3B008A, #7F31D4);
+    color: white;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow-x: hidden;
 }
+
 .background-shape1 {
     width: 902px;
     height: 800px;
     background: #BA24D5; 
-    border-radius: 50%; /* Membuat elemen menjadi lingkaran */
-    filter: blur(231px); /* Efek blur  */
+    border-radius: 50%;
+    filter: blur(231px);
     position: absolute; 
-    top: -200px; /* Posisi di atas halaman (sesuaikan dengan kebutuhan) */
-    left: 50%; /* Posisi di tengah secara horizontal */
-    transform: translateX(-50%); /* Agar elemen benar-benar di tengah layar secara horizontal */
-    z-index: -1; /*  elemen berada di belakang konten utama */
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
 }
 
-  .background-shape2 {
+.background-shape2 {
     width: 458px;
     height: 458px;
     background: #6938EF; 
-    box-shadow: 0px 0px 50px rgba(105, 56, 239, 0.5); /* Sesuaikan bayangan */
+    box-shadow: 0px 0px 50px rgba(105, 56, 239, 0.5);
     border-radius: 458px;
-    filter: blur(231px); /* Mengurangi efek blur untuk tampilan lebih jelas */
-    position: absolute; /* Agar tidak mengganggu elemen lain */
-    top: 50%; /* Posisikan secara vertikal di tengah */
-    left: -200px; /* Atur sedikit di luar layar untuk efek lebih baik di sisi kiri */
-    transform: translateY(-50%); /* n elemen berada di tengah secara vertikal */
+    filter: blur(231px);
+    position: absolute; 
+    top: 50%;
+    left: -200px;
+    transform: translateY(-50%);
     z-index: -1; 
 }
 
@@ -46,159 +46,153 @@ body {
     width: 458px;
     height: 458px;
     background: #37156F; 
-    box-shadow: 0px 0px 50px rgba(105, 56, 239, 0.5); /* Sesuaikan bayangan */
+    box-shadow: 0px 0px 50px rgba(105, 56, 239, 0.5);
     border-radius: 1000px; 
-    filter: blur(200px); /*  efek blur */
+    filter: blur(200px);
     position: absolute; 
-    top: 80%; /* Posisi vertikal di tengah */
-    right: -200px; /* Atur sedikit di luar layar untuk efek lebih baik di sisi kanan */
+    top: 80%;
+    right: -200px; 
     transform: translateY(-50%); 
     z-index: -1;
 }
 
-/* Navbar Background Transparan dengan Border Putih */
 header nav {
-    display: flex; /* Menggunakan flexbox untuk layout */
-    justify-content: space-between; /* Menyebar item secara merata */
-    align-items: center; /* Memusatkan item secara vertikal */
-    padding: 15px 30px; /* Ukuran padding navbar */
-    background-color: rgba(255, 255, 255, 0.2); /* Warna putih transparan untuk navbar */
-    max-width: 1440px; /* Maksimal lebar navbar */
-    margin: 15px 20px; /* Jarak dari tepi lebih longgar */
-    border-radius: 12px; /* Membuat sudut navbar agak melengkung */
-    border: 2px solid rgba(255, 255, 255, 0.5); /* Border putih transparan */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sedikit bayangan */
-    height: 60px; /* Tinggi navbar lebih besar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    max-width: 1440px;
+    margin: 15px 20px;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    height: 60px;
 }
 
 .navbar.profile-icon {
     font-size: 24px;
 }
 
-/* Styling untuk logo dan menu */
 .logo {
-    display: flex; /* Menggunakan flexbox untuk logo */
-    align-items: center; /* Memusatkan logo secara vertikal */
+    display: flex;
+    align-items: center;
 }
 
 .logo-image {
-    height: 40px; /* Ukuran logo sedikit lebih besar */
-    margin-right: 10px; /* Jarak kanan logo */
+    height: 40px;
+    margin-right: 10px;
 }
 
 .logo-text-image {
-    height: 30px; /* Ukuran teks logo lebih besar */
+    height: 30px;
 }
 
-/* Menambahkan gaya untuk ikon profil */
 .profile-icon {
-    font-size: 40px; /* Ukuran ikon profil */
-    color: white; /* Warna ikon profil */
-    cursor: pointer; /* Mengubah kursor saat di-hover */
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
 }
 
 nav ul {
-    display: flex; /* Menggunakan flexbox untuk menu */
-    list-style: none; /* Menghapus bullet point pada list */
+    display: flex;
+    list-style: none;
 }
 
 nav ul li {
-    margin: 0 15px; /* Menambah jarak antar item menu */
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: white; /* Warna teks link */
-    text-decoration: none; /* Menghapus garis bawah pada link */
-    font-weight: bold; /* Mengatur ketebalan font */
-    font-size: 16px; /* Ukuran font lebih besar */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
 }
 
-/* Tombol Daftar dan Masuk */
 .auth-buttons .register-btn, .auth-buttons .login-btn {
-    padding: 10px 20px; /* Tambahkan padding untuk tombol */
-    font-size: 15px; /* Ukuran font lebih besar */
+    padding: 10px 20px;
+    font-size: 15px;
 }
 
 .auth-buttons .register-btn {
-    background-color: white; /* Warna latar belakang tombol Daftar */
-    color: #7F31D4; /* Warna teks tombol Daftar */
-    border: 2px solid #7F31D4; /* Border tombol Daftar */
-    cursor: pointer; /* Mengubah cursor saat hover */
-    border-radius: 8px; /* Membuat sudut tombol melengkung */
+    background-color: white;
+    color: #7F31D4;
+    border: 2px solid #7F31D4;
+    cursor: pointer;
+    border-radius: 8px;
 }
 
 .auth-buttons .login-btn {
-    background-color: #3B008A; /* Warna latar belakang tombol Masuk */
-    color: white; /* Warna teks tombol Masuk */
-    border: none; /* Menghapus border tombol Masuk */
-    cursor: pointer; /* Mengubah cursor saat hover */
-    border-radius: 8px; /* Membuat sudut tombol melengkung */
+    background-color: #3B008A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
 }
 
-/* Hover effect */
 .auth-buttons .register-btn:hover {
-    background-color: rgba(255, 255, 255, 0.8); /* Efek hover untuk tombol Daftar */
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .auth-buttons .login-btn:hover {
-    background-color: #5C00B2; /* Efek hover untuk tombol Masuk */
+    background-color: #5C00B2;
 }
 
 .hero {
-    display: flex; /* Menggunakan flexbox untuk hero section */
-    flex-direction: column; /* Mengatur arah flex menjadi kolom */
-    justify-content: center; /* Memusatkan konten secara vertikal */
-    align-items: center; /* Memusatkan konten secara horizontal */
-    padding: 50px; /* Padding pada hero section */
-    max-width: 1440px; /* Maksimal lebar hero section */
-    margin: 0 auto; /* Membuat hero section selalu di tengah layar */
-    height: 500px; /* Sesuaikan tinggi sesuai ukuran layar */
-    text-align: center; /* Memusatkan teks */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 500px;
+    text-align: center;
 }
 
 .hero-content {
-    max-width: 600px; /* Maksimal lebar konten hero */
-    margin-bottom: 30px; /* Jarak antara konten dan gambar kartu */
+    max-width: 600px;
+    margin-bottom: 30px;
 }
 
 .hero-content h1 {
-    font-size: 2.5rem; /* Ukuran font judul */
-    margin-bottom: 20px; /* Jarak bawah judul */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
 .hero-content p {
-    margin-bottom: 30px; /* Jarak bawah paragraf */
-    font-size: 1.1rem; /* Ukuran font paragraf */
+    margin-bottom: 30px;
+    font-size: 1.1rem;
 }
 
 .start-btn {
-    background-color: #3B008A; /* Warna latar belakang tombol mulai */
-    padding: 15px 30px; /* Padding untuk tombol mulai */
-    color: white; /* Warna teks tombol mulai */
-    border: none; /* Menghapus border tombol mulai */
-    border-radius: 5px; /* Membuat sudut tombol melengkung */
-    font-size: 1.1rem; /* Ukuran font tombol mulai */
-    cursor: pointer; /* Mengubah cursor saat hover */
+    background-color: #3B008A;
+    padding: 15px 30px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
 
 .card-image {
-    margin-top: 20px; /* Jarak antara tombol dan gambar card */
+    margin-top: 20px;
 }
 
 .card-image img {
-    width: 400px; /* Atur ukuran gambar card */
-    max-width: 100%; /* Memastikan gambar responsif */
-    height: auto; /* Menjaga rasio aspek gambar */
+    width: 400px;
+    max-width: 100%;
+    height: auto;
 }
 
-
 .container {
-    background-color: rgba(255, 255, 255, 0.2); /* Warna putih transparan untuk navbar */
-    width: 100%; /* Make the container full width */
-    max-width: 1200px; /* Optional: Set a maximum width for large screens */
-    margin: 50px auto; /* Center the container */
-    padding: 20px; /* Padding inside the container */
-    color: white; /* Text color for the container */
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    color: white;
     box-shadow: #5C00B2;
     border-radius: 10px;
 }
@@ -211,50 +205,48 @@ nav ul li a {
 }
 
 .tips {
-    display: flex; /* Menggunakan flexbox untuk layout */
-    justify-content: space-between; /* Jarak antar kolom */
-    margin-top: 30px; /* Jarak atas tips section */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
 }
 
 .column {
-    width: 100%; /* Lebar kolom */
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 .tip {
-    border-radius: 10px; /* Rounded corners */
-    padding: 15px; /* Padding inside each tip */
-    margin-bottom: 15px; /* Bottom margin between tips */
-    margin-right: 15px; /* Right margin between tips (optional) */
-    display: flex; /* Use flexbox for internal layout */
-    flex-direction: column; /* Arrange items in a column */
-    justify-content: space-between; /* Distribute space evenly */
-    height: 150px; /* Set a fixed height for each card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: black;
     width: 400px;
     text-align: center;
 }
 
-/* Background colors for each card */
 .color-1 {
-    background-color: #EED1FB; /* Light Yellow */
+    background-color: #EED1FB;
 }
 
 .color-2 {
-    background-color: #FEF0C7; /* Light Purple */
+    background-color: #FEF0C7;
 }
 
 .color-3 {
-    background-color: #EEEFCE; /* Light Green */
+    background-color: #EEEFCE;
 }
 
 .color-4 {
-    background-color: #E2DAFB; /* Light Lavender */
+    background-color: #E2DAFB;
 }
-
 
 .tip h3 {
     font-size: 20px;
@@ -268,23 +260,25 @@ nav ul li a {
 }
 
 .imagetip1-container {
-    display: flex; /* Menempatkan gambar di sebelah konten */
-    justify-content: center; /* Memusatkan gambar */
-    align-items: center; /* Memusatkan gambar secara vertikal */
-    margin-left: 10px; /* Jarak kiri untuk gambar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
 }
+
 .tips2 {
-    display: flex; /* Menggunakan flexbox untuk layout */
-    justify-content: space-between; /* Jarak antar kolom */
-    margin-top: 30px; /* Jarak atas financial plans section */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
 }
 
 .imagetip2-container {
     display: flex;
-    justify-content: center; /* Memusatkan gambar di area kiri */
+    justify-content: center;
     align-items: center;
-    margin-right: 20px; /* Jarak kanan untuk gambar */
+    margin-right: 20px;
 }
+
 footer {
     background-color: #ffffff7c;
     padding: 20px 0;
@@ -334,9 +328,9 @@ footer {
 
 .social-media-divider {
     width: 80%;
-    height: 2px; /* Ketebalan garis */
-    background-color: white; /* Warna garis */
-    margin: 10px auto; /* Memusatkan garis */
+    height: 2px;
+    background-color: white;
+    margin: 10px auto;
 }
 
 .footer-bottom {
