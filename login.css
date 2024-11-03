@@ -1,60 +1,59 @@
-/* Gaya umum tetap sama */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Mengatur box-sizing untuk semua elemen */
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Inter', sans-serif; /* Mengatur jenis font */
+    font-family: 'Inter', sans-serif;
     background-color: #E3D9FB;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Mengatur tinggi minimal layar penuh */
-    margin: 0; /* Menghapus margin pada body */
+    min-height: 100vh;
+    margin: 0;
 }
 
 .container {
     display: flex;
-    width: 100%; /* Mengatur lebar 100% agar memenuhi layar penuh */
-    max-width: none; /* Menghapus batas maksimal lebar */
+    width: 100%;
+    max-width: none;
     background-color: #F3E8FF;
-    border-radius: 0; /* Menghapus border radius agar elemen memenuhi layar */
-    box-shadow: none; /* Menghapus bayangan pada kontainer untuk desain yang lebih bersih */
+    border-radius: 0;
+    box-shadow: none;
 }
 
 .left, .right {
-    flex: 1; /* Membagi ruang sama besar untuk bagian kiri dan kanan */
+    flex: 1;
     padding: 40px;
-    height: 100vh; /* Menambahkan tinggi agar memenuhi layar penuh secara vertikal */
+    height: 100vh;
 }
 
 .left {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 60px; /* Menggeser konten ke tengah */
+    padding-left: 60px;
 }
 
 .right {
     display: flex;
     flex-direction: column; 
     justify-content: center;
-    padding-right: 40px; /* Atur padding kanan jika diperlukan */
+    padding-right: 40px;
 }
 
 .right img {
-    max-width: 70%; /* Mengatur ukuran gambar lebih kecil */
-    height: auto; /* Memastikan gambar tidak terdistorsi */
-    margin-top: 20px; /* Jarak antara tombol dan gambar */
-    margin-left: 80px; /* Menggeser gambar sedikit ke kanan */
+    max-width: 70%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 80px;
 }
 
 .header {
-    display: flex; /* Menggunakan flexbox untuk header */
-    justify-content: flex-start; /* Menempatkan konten di ujung kiri */
-    margin-bottom: 20px; /* Menambahkan margin bawah untuk memberikan ruang antara tombol dan gambar */
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
 }
 
 h1 {
@@ -75,21 +74,21 @@ p {
 }
 
 .divider-container {
-    display: flex; /* Menggunakan flexbox untuk menyusun garis dan teks secara horizontal */
-    align-items: center; /* Memastikan garis dan teks berada di tengah vertikal */
-    margin: 20px 0; /* Jarak antara elemen ini dengan elemen lain */
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
 }
 
 .divider-line {
-    flex: 1; /* Membuat garis mengisi ruang yang tersisa */
-    border: none; /* Menghapus border default */
-    border-top: 1px solid #E0E0E0; /* Menambahkan garis atas */
-    margin: 0 10px; /* Jarak antara garis dan teks */
+    flex: 1;
+    border: none;
+    border-top: 1px solid #E0E0E0;
+    margin: 0 10px;
 }
 
 .divider-container span {
-    color: #2D0F85; /* Warna teks */
-    font-size: 16px; /* Ukuran font untuk teks */
+    color: #2D0F85;
+    font-size: 16px;
 }
 
 .form-group {
@@ -138,7 +137,7 @@ p {
 
 .options {
     display: flex;
-    justify-content: space-between; /* Menyusun label dan tautan dalam satu baris */
+    justify-content: space-between;
     align-items: center;
     margin-top: 10px;
 }
@@ -155,9 +154,9 @@ p {
 
 .options a {
     font-size: 14px;
-    color: black; /* Warna teks */
-    text-decoration: underline; /* Menambahkan garis bawah */
-    cursor: pointer; /* Mengubah kursor saat hover */
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .submit-btn {
@@ -174,16 +173,16 @@ p {
 .register {
     text-align: center;
     margin-top: 20px;
-    display: flex; /* Menggunakan flexbox untuk menyusun elemen dalam baris */
-    justify-content: center; /* Mengatur posisi ke tengah */
+    display: flex;
+    justify-content: center;
 }
 
 .register a {
     color: #2D0F85;
-    text-decoration: underline; /* Menambahkan garis bawah */
+    text-decoration: underline;
     margin-left: 5px;
 }
 
 .register a:hover {
-    text-decoration: underline; /* Mengatur agar garis bawah tetap muncul saat hover */
+    text-decoration: underline;
 }
