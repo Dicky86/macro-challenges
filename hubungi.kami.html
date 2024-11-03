@@ -15,22 +15,22 @@
     <div class="contact-form">
         <div>
             <h2>HUBUNGI KAMI</h2>
-            <form>
+            <form id="contactForm" onsubmit="showPopup(event)">
                 <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Masukkan Email Pengguna">
+                <input type="email" id="email" placeholder="Masukkan Email Pengguna" required>
                 <div class="d-flex justify-content-between">
                     <div class="me-2" style="width: 48%;">
                         <label for="username">Nama Pengguna</label>
-                        <input type="text" id="username" placeholder="Masukkan nama pengguna">
+                        <input type="text" id="username" placeholder="Masukkan nama pengguna" required>
                     </div>
                     <div style="width: 48%;">
                         <label for="phone">Nomor Telepon</label>
-                        <input type="text" id="phone" placeholder="Masukkan No.telp">
+                        <input type="text" id="phone" placeholder="Masukkan No.telp" required>
                     </div>
                 </div>
                 <label for="message">Masukkan pesan</label>
-                <textarea id="message" placeholder="Masukkan pesan"></textarea>
-                <button type="submit">Kirim</button>
+                <textarea id="message" placeholder="Masukkan pesan" required></textarea>
+                <button type="submit" id="submitButton">Kirim</button>
             </form>
         </div>
         <div class="contact-info">
@@ -39,5 +39,16 @@
             <p class="p-small">Kami sangat menjaga privasi dan keamanan data pribadi Anda. Setiap informasi yang Anda bagikan dengan kami akan dilindungi sesuai dengan kebijakan privasi kami dan standar keamanan terbaik. Kami berkomitmen untuk menjaga kerahasiaan informasi Anda.</p>
         </div>
     </div>
+
+    <div class="popup-overlay" id="popupOverlay"></div>
+    <div class="popup" id="popup">
+        <span class="close-popup" onclick="closePopup()">&times;</span>
+        <h5>Terimakasih!</h5>
+        <p>Formulir Anda telah berhasil dikirim. Tim kami akan segera menghubungi Anda dalam waktu 1-2 hari kerja. Terima kasih telah menghubungi Control Money, kami siap membantu Anda dengan segala kebutuhan dan pertanyaan terkait layanan kami.</p>
+        <p>Jika Anda tidak menerima respons dalam waktu yang ditentukan, silakan hubungi kami melalui telepon atau email yang tercantum di halaman ini.</p>
+        <h5>Control Money – Atur Keuangan, Wujudkan Impian</h5>
+    </div>
+
+    <script src="hubungi.kami.js"></script>
 </body>
 </html>
