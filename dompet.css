@@ -20,9 +20,9 @@ body {
     height: 800px;
     background: #BA24D5; 
     border-radius: 50%;
-    filter: blur(231px);
+    filter: blur(270px);
     position: absolute; 
-    top: -200px;
+    top: -400px;
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
