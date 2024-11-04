@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #3B008A, #7F31D4);
+    color: white;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    max-width: 1440px;
+    margin: 20px 30px;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    height: 70px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo-image {
+    height: 40px;
+    margin-right: 10px;
+}
+.logo-text-image {
+    height: 30px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.auth-buttons .register-btn, .auth-buttons .login-btn {
+    padding: 10px 20px;
+    font-size: 15px;
+}
+.auth-buttons .register-btn {
+    background-color: white;
+    color: #7F31D4;
+    border: 2px solid #7F31D4;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.auth-buttons .login-btn {
+    background-color: #3B008A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.auth-buttons .register-btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.auth-buttons .login-btn:hover {
+    background-color: #5C00B2;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 500px;
+    text-align: center;
+}
+.hero-content {
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.hero-content p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+.start-btn {
+    background-color: #3B008A;
+    padding: 15px 30px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.card-image {
+    margin-top: 20px;
+}
+.card-image img {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+}
