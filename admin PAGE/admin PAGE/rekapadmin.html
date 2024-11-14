@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekap Keseluruhan Pengguna</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        // Menampilkan halaman login pertama kali
+        window.onload = function() {
+            document.getElementById('tab1').style.display = 'block'; // Tampilkan tab1 (login)
+            document.getElementById('tab2').style.display = 'none'; // Sembunyikan tab2
+            document.getElementById('detailAdmin').style.display = 'none'; // Sembunyikan detailAdmin
+        };
+
+        // Fungsi untuk menampilkan tab admin setelah login
+        function showAdminTab() {
+            document.getElementById('tab1').style.display = 'none'; // Sembunyikan tab1 (login)
+            document.getElementById('tab2').style.display = 'block'; // Tampilkan tab2 (admin)
+        }
+
+        // Fungsi untuk berpindah ke admin.html saat klik pada row
+        function navigateToAdmin() {
+            window.location.href = "admin.html"; // Arahkan ke admin.html
+        }
+    </script>
+</head>
+<body>
+    <div class="background-shape1"></div> 
+    <div class="background-shape2"></div> 
+    <div class="background-shape3"></div> 
+
+    <!-- Halaman Login -->
+    <section id="tab1" style="display:none">
+        <div class="login-container">
+            <div class="login-form">
+                <h2>Masuk Sekarang</h2>
+                <p>Halo! Selamat Datang Admin 👋</p>
+                <form id="loginForm" onsubmit="event.preventDefault(); showAdminTab();">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="masukkan email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Kata sandi</label>
+                        <div class="password-container">
+                            <input type="password" id="password" placeholder="masukkan kata sandi" required>
+                            <span class="toggle-password">
+                                <img src="asset/basil_eye-closed-solid.png">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-options">
+                        <label>
+                            <input type="checkbox" id="remember"> Ingat saya
+                        </label>
+                        <a href="#" class="forgot-password">lupa kata sandi?</a>
+                    </div>
+                    <button type="submit" class="login-button">Masuk</button>
+                </form>
+            </div>
+            <div class="login-illustration">
+                <img src="asset/Logo fix.png" alt="logo" style="width: 400px;">
+                <img src="asset/computer.png" alt="Control Money Illustration" style="width:400px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Halaman Admin (Tab 2) -->
+    <section id="tab2" style="display: none;">
+        <div class="container">
+            <div class="searchbar">
+                <input type="text" placeholder="Siapa yang ingin kamu lacak?" />
+                <button>Search</button>
+            </div>
+            <div class="admin-info">
+                <div class="text-wrapper">
+                    <span>Admin 3 - Rizal Setyawan</span>
+                    <span>rizal.setyawan21@gmail.com</span>
+                </div>
+                <div class="profile-pic"></div>
+            </div>
+
+            <!-- Tabel Pengguna -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tanggal</th>
+                        <th>Nama Pengguna</th>
+                        <th>Jumlah Transaksi</th>
+                        <th>Budget</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="selected" onclick="navigateToAdmin()">
+                        <td>10/11/24</td>
+                        <td>Andi Santoso<br><span class="email">andi.santoso@gmail.com</span></td>
+                        <td>+350.000<br>-74.000</td>
+                        <td class="status aman">Aman</td>
+                    </tr>
+                    <tr>
+                        <td>10/11/24</td>
+                        <td>Rina Wulandari<br><span class="email">rina_wulandari87@gmail.com</span></td>
+                        <td>+50.000<br>-172.000</td>
+                        <td class="status aman">Aman</td>
+                    </tr>
+                    <tr>
+                        <td>10/11/24</td>
+                        <td>Budi Prasetyo<br><span class="email">budi.pra2023@gmail.com</span></td>
+                        <td>+725.000<br>-512.000</td>
+                        <td class="status hampir-habis">Hampir habis</td>
+                    </tr>
+                    <tr>
+                        <td>10/11/24</td>
+                        <td>Lina Herlina<br><span class="email">budiherlina@gmail.com</span></td>
+                        <td>+25.000<br>-115.000</td>
+                        <td class="status lewat-batas">Lewat batas</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Footer -->
+            <footer>
+                <div class="pagination">
+                    <span>1 dari 5</span>
+                    <div class="page-numbers">
+                        <button class="active">1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>4</button>
+                        <button>5</button>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
